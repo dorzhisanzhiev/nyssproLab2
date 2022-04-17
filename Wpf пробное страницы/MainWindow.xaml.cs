@@ -195,7 +195,42 @@ namespace Wpf_пробное_страницы
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            List<string> list = new List<string>();
+            object missing = Type.Missing;
+            Excel.Application oXL = new Excel.Application();
+            oXL.Visible = false;
+            Excel.Workbook oWB = oXL.Workbooks.Add(missing);
+            string fileName = string.Empty;
+            Excel.Worksheet oSheet = oWB.ActiveSheet as Excel.Worksheet;
+            var oSheetItems = oSheet;
+            if (oSheetItems != null)
+            {
+                oSheetItems.Name = "sheetName";
+                int i = 1;
+                foreach (var item in myList)
+                {
+                    oSheetItems.Cells[i, 1] = myList[i - 1].Id;
+                    oSheetItems.Cells[i, 2] = myList[i - 1].Name;
+                    oSheetItems.Cells[i, 3] = myList[i - 1].Description;
+                    oSheetItems.Cells[i, 4] = myList[i - 1].Source;
+                    oSheetItems.Cells[i, 5] = myList[i - 1].ImpactObj;
+                    if (myList[i - 1].Confidentiality) oSheetItems.Cells[i, 6] = "1";
+                    else oSheetItems.Cells[i, 6] = "0";
+                    if (myList[i - 1].Integrity) oSheetItems.Cells[i, 7] = "1";
+                    else oSheetItems.Cells[i, 7] = "0";
+                    if (myList[i - 1].Availability) oSheetItems.Cells[i, 8] = "1";
+                    else oSheetItems.Cells[i, 8] = "0";
+                    i++;
+                }
+            }
+            fileName = Directory.GetCurrentDirectory() + @"\thrlist_backup.xlsx";
+            oWB.SaveAs(fileName, Excel.XlFileFormat.xlOpenXMLWorkbook,
+                missing, missing, missing, missing,
+                Excel.XlSaveAsAccessMode.xlNoChange,
+                missing, missing, missing, missing, missing);
+            oWB.Close(missing, missing, missing);
+            oXL.UserControl = true;
+            oXL.Quit();
         }
     }
 }
