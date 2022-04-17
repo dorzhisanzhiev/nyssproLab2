@@ -55,6 +55,7 @@ namespace Wpf_пробное_страницы
             dataGrid.ItemsSource = firstTable.DefaultView; //Fill the dataGrid with the 
                                                            //DataTable created previously
 
+
         }
 
         public string PageNumberDisplay()
@@ -68,7 +69,7 @@ namespace Wpf_пробное_страницы
                                                                      //reduced the number of times I had to write this string statement
         }
 
-        private void NextButton_Click(object sender, RoutedEventArgs e)
+        private void NextButton_Click(object sender, RoutedEventArgs e) //кнопки пагинации
         {
             dataGrid.ItemsSource = PagedTable.Next(myList, numberOfRecPerPage).DefaultView;
             PageInfo.Content = PageNumberDisplay();
@@ -91,14 +92,83 @@ namespace Wpf_пробное_страницы
             dataGrid.ItemsSource = PagedTable.Last(myList, numberOfRecPerPage).DefaultView;
             PageInfo.Content = PageNumberDisplay();
         }
-
+        private void Refresh_Click(object sender, RoutedEventArgs e) // 2 пункт
+        {
+            try
+            {
+                IList<ThreatList.Threat> myList2 = ThreatList.GetNewData();
+                string fullmessage = "";
+                string message = "";
+                int count = 0;
+                for (int i = 0; i < myList2.Count; i++)
+                {
+                    if (myList[i].Name != myList2[i].Name)
+                    {
+                        message += "Название было: " + myList[i].Name + ".\nНазвание стало: " + myList2[i].Name + ".\n";
+                    }
+                    if (myList[i].Description != myList2[i].Description)
+                    {
+                        message += "Описание было: " + myList[i].Description + ".\nОписание стало: " + myList2[i].Description + ".\n";
+                    }
+                    if (myList[i].Source != myList2[i].Source)
+                    {
+                        message += "Источник угрозы был: " + myList[i].Source + ".\nИсточник угрозы стал: " + myList2[i].Source + ".\n";
+                    }
+                    if (myList[i].ImpactObj != myList2[i].ImpactObj)
+                    {
+                        message += "Объект воздействия был: " + myList[i].ImpactObj + ".\nОбъект воздействия стал: " + myList2[i].ImpactObj + ".\n";
+                    }
+                    if (myList[i].Confidentiality != myList2[i].Confidentiality)
+                    {
+                        if (myList[i].Confidentiality == true)
+                        {
+                            message += "Нарушение конфиденциальности было: да, стало: нет.\n";
+                        }
+                        message += "Нарушение конфиденциальности было: нет, стало: да.\n";
+                    }
+                    if (myList[i].Integrity != myList2[i].Integrity)
+                    {
+                        if (myList[i].Integrity == true)
+                        {
+                            message += "Нарушение целостности было: да, стало: нет.\n";
+                        }
+                        message += "Нарушение целостности было: нет, стало: да.\n";
+                    }
+                    if (myList[i].Availability != myList2[i].Availability)
+                    {
+                        if (myList[i].Availability == true)
+                        {
+                            message += "Нарушение доступности было: да, стало: нет.\n";
+                        }
+                        message += "Нарушение доступности было: нет, стало: да.\n";
+                    }
+                    if (message != "")
+                    {
+                        message = "Изменилась угроза " + myList2[i].Id + ".\n" + message;
+                        fullmessage += message;
+                        message = "";
+                        count++;
+                    }
+                }
+                if (count != 0)
+                {
+                    fullmessage = "Статус: Успешно.\nОбновлённых записей: " + count + ".\n" + fullmessage;
+                    MessageBox.Show(fullmessage);
+                    myList = myList2;
+                } else MessageBox.Show("Статус: Успешно.\nОбновлённых записей: 0.\nБаза данных не изменилась.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Статус: Ошибка.\nПричина: " + ex.Message);
+            }
+        }
         private void NumberOfRecords_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             numberOfRecPerPage = Convert.ToInt32(NumberOfRecords.SelectedItem);
             dataGrid.ItemsSource = PagedTable.First(myList, numberOfRecPerPage).DefaultView;
             PageInfo.Content = PageNumberDisplay();
         }
-        private void myDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void myDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e) // 5 пункт
         {
             if (dataGrid.SelectedItem == null) return;
             DataRowView datarow = (DataRowView)dataGrid.SelectedItem;
@@ -121,6 +191,11 @@ namespace Wpf_пробное_страницы
             }
             else message += "\nНарушение доступности: нет";
             MessageBox.Show(message);
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

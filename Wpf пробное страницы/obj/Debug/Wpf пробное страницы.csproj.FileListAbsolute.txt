@@ -1,0 +1,35 @@
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Wpf пробное страницы.exe.config
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Wpf пробное страницы.exe
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Wpf пробное страницы.pdb
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\MainWindow.g.cs
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\App.g.cs
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы_MarkupCompile.cache
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы_MarkupCompile.lref
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\MainWindow.baml
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.g.resources
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf_пробное_страницы.Properties.Resources.resources
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.exe
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.pdb
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.csproj.ResolveComReference.cache
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\source\repos\Wpf пробное страницы\Wpf пробное страницы\obj\Debug\Wpf пробное страницы.csproj.CopyComplete

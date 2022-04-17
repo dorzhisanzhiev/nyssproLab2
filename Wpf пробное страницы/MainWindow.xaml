@@ -29,7 +29,7 @@
                       Grid.ColumnSpan='4'
                       Margin='8,10,10,10' />
             <StackPanel Grid.Row='1'
-                        Grid.RowSpan='3'>
+                        Grid.RowSpan='2' Margin="0,0,0,10">
                 <Button Content='Next'
                         x:Name='NextButton'
                         Margin='6'
@@ -54,6 +54,13 @@
                 </StackPanel>
             </StackPanel>
             <TextBlock HorizontalAlignment="Center" Margin="0,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="140"><Run Text="Для подробного"/><Run Language="ru-ru" Text=" описания дважды кликните на угрозу"/></TextBlock>
+            <Button x:Name="Refresh"
+                    Content="Обновить базу"
+                    HorizontalAlignment="Center"
+                    Grid.Row="3"
+                    VerticalAlignment="Center"
+                    Click='Refresh_Click'/>
+            <Button x:Name="SaveButton" Content="Сохранить &#xD;&#xA;локальную базу" HorizontalAlignment="Center" Height="38" Margin="0,87,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.RowSpan="2" Click="SaveButton_Click" Width="112"/>
         </Grid>
     </Grid>
 </Window>
